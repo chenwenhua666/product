@@ -1,0 +1,24 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: PRODUCT
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: CONFIG
+      profile: dev
+  rabbitmq:
+    host: 127.0.0.1
+    username: guest
+    password: guest
+    port: 5672
+    #listener:
+      #simple:
+        #concurrency: 5
+        #max-concurrency: 10
+        #prefetch: 1 #限流，同一时间只能一条消费
+        #acknowledge-mode: manual
