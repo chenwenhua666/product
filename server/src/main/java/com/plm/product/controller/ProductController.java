@@ -73,6 +73,11 @@ public class ProductController {
 
     @PostMapping("/ListForOrder")
     public List<ProductInfoOutput> ListForOrder(@RequestBody List<String> productIdList){
+        try {
+            Thread.sleep(3000);
+        } catch (Exception e){
+            e.printStackTrace();
+        }
         return productInfoService.findList(productIdList);
     }
 
