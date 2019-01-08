@@ -22,3 +22,6 @@ spring:
         #max-concurrency: 10
         #prefetch: 1 #限流，同一时间只能一条消费
         #acknowledge-mode: manual
+logging:
+  level:
+    org.springframework.cloud.openfeign: debug
