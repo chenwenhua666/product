@@ -12,7 +12,7 @@ spring:
         service-id: CONFIG
       profile: dev
   rabbitmq:
-    host: 127.0.0.1
+    host: 192.168.2.175
     username: guest
     password: guest
     port: 5672
@@ -25,3 +25,5 @@ spring:
 logging:
   level:
     org.springframework.cloud.openfeign: debug
+server:
+  port: 8083
